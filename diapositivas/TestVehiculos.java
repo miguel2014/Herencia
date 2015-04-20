@@ -4,7 +4,7 @@ import java.time.LocalDate;
 
 public class TestVehiculos {
 	public static void main(String[] args) {
-		
+		Vehiculo c=new Vehiculo("al", 22,3);
 	}
 }
 class Vehiculo{
@@ -15,13 +15,10 @@ class Vehiculo{
 	/**
 	 * @param numeroRuedas
 	 * @param fechaCompra
-	 * @param numeroPasajeros
 	 */
-	public Vehiculo(int numeroRuedas,
-			int numeroPasajeros) {
+	public Vehiculo(String propietario, int numeroRuedas,int numeroPasajeros) {
 		this.numeroRuedas = numeroRuedas;
 		this.fechaCompra = LocalDate.now();
-		this.propietario = propietario;
 		this.numeroPasajeros = numeroPasajeros;
 	}
 	public String getPropietario() {
@@ -51,14 +48,14 @@ class Coche extends Vehiculo{
 	private boolean diesel;
 	private boolean descapotable;
 	/**
+	 * @param numeroRuedas
 	 * @param fechaCompra
-	 * @param propietario
 	 * @param numeroPasajeros
 	 * @param diesel
 	 * @param descapotable
 	 */
-	public Coche(int numeroPasajeros, boolean diesel, boolean descapotable) {
-		super(4, numeroPasajeros);
+	public Coche(String propietario, boolean diesel, boolean descapotable) {
+		super(4,propietario);
 		this.diesel = diesel;
 		this.descapotable = descapotable;
 	}
