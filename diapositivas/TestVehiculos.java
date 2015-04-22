@@ -47,6 +47,7 @@ class Vehiculo{
 class Coche extends Vehiculo{
 	private boolean diesel;
 	private boolean descapotable;
+	
 	/**
 	 * @param numeroRuedas
 	 * @param fechaCompra
@@ -54,15 +55,29 @@ class Coche extends Vehiculo{
 	 * @param diesel
 	 * @param descapotable
 	 */
-	public Coche(String propietario, boolean diesel, boolean descapotable) {
-		super(4,propietario);
+	/*public Coche(String propietario, boolean diesel, boolean descapotable) {
+		super(propietario, numeroPasajeros, numeroPasajeros);
 		this.diesel = diesel;
 		this.descapotable = descapotable;
-	}
+	}*/
 	@Override
 	public String toString() {
 		return "Coche [diesel=" + diesel + ", descapotable=" + descapotable
 				+ ", Vehiculo" + super.toString() + "]";
+	}
+
+	/**
+	 * @param propietario
+	 * @param numeroRuedas
+	 * @param numeroPasajeros
+	 * @param diesel
+	 * @param descapotable
+	 */
+	public Coche(String propietario, int numeroRuedas, int numeroPasajeros,
+			boolean diesel, boolean descapotable) {
+		super(propietario, numeroRuedas, numeroPasajeros);
+		this.diesel = diesel;
+		this.descapotable = descapotable;
 	}
 	
 	
