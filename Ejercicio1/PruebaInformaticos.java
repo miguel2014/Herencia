@@ -7,12 +7,14 @@ public class PruebaInformaticos {
 		Analista a=new Analista("Empresa2", "Analiza");
 		a.setSueldo(251);
 		System.out.println(a);
-		System.out.println(a.pagarSueldoAumentado(33));
+		System.out.println(a.pagarSueldo(33));
 		Programador p=new Programador("Empresa3", "Idioma");
 		p.setSueldo(251);
 		double pagado=p.pagarSueldo(33);
 		System.out.println(p);
 		System.out.println(pagado);
+		InformaticoAbs i=new Analista("Empresa del polimorfismo", "Polimorfismo");
+		System.out.println(i);
 	}
 
 }

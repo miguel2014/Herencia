@@ -11,9 +11,15 @@ public class Analista extends InformaticoAbs{
 		super(empresa);
 		this.especialidad = especialidad;
 	}
-	public double pagarSueldoAumentado(double horas){
-		return (pagarSueldo(horas))+200;	
+	
+	
+	@Override
+	public double pagarSueldo(double horas) {
+		// TODO Auto-generated method stub
+		return super.pagarSueldo(horas)+100;
 	}
+
+
 	@Override
 	public String toString() {
 		return "Analista [especialidad=" + especialidad + ", " +super.toString() +"]";
