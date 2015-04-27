@@ -15,7 +15,7 @@ public class Mago extends Personajes {
 	public String encantar(){
 		if(getNivelEnergia()>=2){
 			alimentarse(-2);
-			return this.poder+" ";	
+			return this.poder;	
 		}
 		else{
 			return "Sin energia para combatir";

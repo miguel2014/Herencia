@@ -18,7 +18,7 @@ public class Guerrero extends Personajes{
 			return this.arma+" "+ getNivelEnergia();
 		}
 		else
-		return "Sin mana para combatir";
+		return "Sin energia para combatir";
 	}
 	@Override
 	public String toString() {
