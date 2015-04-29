@@ -3,6 +3,7 @@ package diapositivas;
 public class TestHerencia {
 	public static void main(String[] args) {
 		//Siempre que creemos un objeto de la clase hija se crea uno de la clase padre
+		@SuppressWarnings("unused")
 		Hija h=new Hija();	
 	}
 }
